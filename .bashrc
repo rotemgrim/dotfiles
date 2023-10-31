@@ -26,3 +26,5 @@ fi
 
 unset rc
 alias config='/usr/bin/git --git-dir=/home/rotem/.cfg/ --work-tree=/home/rotem'
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
