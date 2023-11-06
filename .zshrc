@@ -33,6 +33,7 @@ antigen bundle command-not-found
 antigen apply
 
 
+cat ./motd | lolcat
 eval "$(starship init zsh)"
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
