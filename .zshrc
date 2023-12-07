@@ -3,7 +3,7 @@ source ~/.antigen.zsh
 source /usr/share/autojump/autojump.zsh
 
 # Load the oh-my-zsh's library.
-antigen use oh-my-zsh
+# antigen use oh-my-zsh
 
 antigen bundle git
 antigen bundle fzf
@@ -17,7 +17,7 @@ antigen bundle kubectl
 antigen bundle golang
 antigen bundle rust
 antigen bundle themes
-antigen bundle docker
+# antigen bundle docker
 antigen bundle docker-compose
 antigen bundle screen
 antigen bundle ssh-agent
@@ -33,7 +33,7 @@ antigen bundle command-not-found
 antigen apply
 
 
-cat ./motd | lolcat
+cat ~/motd | lolcat
 eval "$(starship init zsh)"
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'

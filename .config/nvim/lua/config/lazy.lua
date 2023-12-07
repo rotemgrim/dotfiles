@@ -10,7 +10,20 @@ require("lazy").setup({
     spec = {
         -- add LazyVim and import its plugins
         { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+        { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+        -- { "vidocqh/auto-indent.nvim", opts = {} },
         -- { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+        { "sindrets/diffview.nvim", lazy = false, priority = 1000 },
+        -- {
+        --     "nvim-neo-tree/neo-tree.nvim",
+        --     branch = "v3.x",
+        --     dependencies = {
+        --         "nvim-lua/plenary.nvim",
+        --         "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+        --         "MunifTanjim/nui.nvim",
+        --         -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+        --     },
+        -- },
         {
             "folke/tokyonight.nvim",
             lazy = false,
