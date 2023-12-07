@@ -19,3 +19,11 @@ vim.keymap.set("n", "<S-k>", "<cmd>bnext<cr>", { desc = "Next buffer" })
 vim.keymap.set("n", "<S-h>", "<C-o>", { desc = "Go Back" })
 vim.keymap.set("n", "<S-l>", "<C-i>", { desc = "Go Forward" })
 vim.keymap.set("n", "<tab>", "<esc>", { desc = "window" })
+
+-- vim-tmux-navigator
+-- vim.keymap.set("n", "<C-h>", "<Cmd>NvimTmuxNavigateLeft<CR>", { silent = true })
+-- vim.keymap.set("n", "<C-j>", "<Cmd>NvimTmuxNavigateDown<CR>", { silent = true })
+-- vim.keymap.set("n", "<C-k>", "<Cmd>NvimTmuxNavigateUp<CR>", { silent = true })
+-- vim.keymap.set("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", { silent = true })
+-- vim.keymap.set("n", "<C-\\>", "<Cmd>NvimTmuxNavigateLastActive<CR>", { silent = true })
+-- vim.keymap.set("n", "<C-Space>", "<Cmd>NvimTmuxNavigateNavigateNext<CR>", { silent = true })
