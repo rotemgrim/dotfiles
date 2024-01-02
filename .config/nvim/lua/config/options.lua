@@ -14,3 +14,7 @@ opt.expandtab = true
 opt.shiftwidth = indent
 opt.softtabstop = indent
 opt.tabstop = indent
+
+-- g.minimap_git_colors = 1
+-- g.minimap_width = 4
+-- g.minimap_auto_start = 1
