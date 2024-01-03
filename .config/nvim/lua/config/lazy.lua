@@ -15,11 +15,26 @@ require("lazy").setup({
         -- { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
         { "sindrets/diffview.nvim", lazy = false, priority = 1000 },
         -- { "wfxr/minimap.vim", lazy = false, priority = 1000 },
+        -- {
+        --     "folke/tokyonight.nvim",
+        --     lazy = false,
+        --     priority = 1000,
+        --     opts = { style = "night" },
+        -- },
         {
-            "folke/tokyonight.nvim",
+            "olimorris/onedarkpro.nvim",
+            priority = 1000, -- Ensure it loads first
             lazy = false,
-            priority = 1000,
-            opts = { style = "night" },
+            opts = {
+                options = {
+                    cursorline = true,
+                },
+                colors = {
+                    dark = {
+                        float_bg = "#1a1a1a",
+                    },
+                },
+            },
         },
         -- import any extras modules here
         { import = "lazyvim.plugins.extras.lang.typescript" },
@@ -43,8 +58,9 @@ require("lazy").setup({
         colorscheme = {
             -- "catppuccin",
             -- "tokyonight-night",
-            "tokyonight",
+            -- "tokyonight",
             -- "habamax",
+            -- "onedark",
         },
     },
     checker = { enabled = true }, -- automatically check for plugin updates

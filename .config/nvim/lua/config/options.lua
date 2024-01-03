@@ -2,6 +2,8 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+-- vim.cmd("colorscheme onedark")
+
 local opt = vim.opt
 local g = vim.g
 local o = vim.o
