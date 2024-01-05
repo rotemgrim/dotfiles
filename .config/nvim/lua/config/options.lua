@@ -9,7 +9,7 @@ local g = vim.g
 local o = vim.o
 local indent = 4
 
-opt.scrolloff = 15
+opt.scrolloff = 7
 
 opt.smartindent = true
 opt.expandtab = true
