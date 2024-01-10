@@ -15,12 +15,12 @@ require("lazy").setup({
         -- { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
         { "sindrets/diffview.nvim", lazy = false, priority = 1000 },
         -- { "wfxr/minimap.vim", lazy = false, priority = 1000 },
-        -- {
-        --     "folke/tokyonight.nvim",
-        --     lazy = false,
-        --     priority = 1000,
-        --     opts = { style = "night" },
-        -- },
+        {
+            "folke/tokyonight.nvim",
+            lazy = false,
+            priority = 1000,
+            opts = { style = "night" },
+        },
         {
             "olimorris/onedarkpro.nvim",
             priority = 1000, -- Ensure it loads first

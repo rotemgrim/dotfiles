@@ -28,3 +28,25 @@ vim.keymap.set("n", "<S-k>", "<cmd>bnext<cr>", { desc = "Next buffer", noremap =
 vim.keymap.set("n", "<S-h>", "<C-o>", { desc = "Go Back" })
 vim.keymap.set("n", "<S-l>", "<C-i>", { desc = "Go Forward" })
 vim.keymap.set("n", "<tab>", "<esc>", { desc = "window" })
+
+-- diagnostic
+local diagnostic_goto = function(next, severity)
+    local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
+    severity = severity and vim.diagnostic.severity[severity] or nil
+    return function()
+        go({ severity = severity })
+    end
+end
+
+-- Go to next
+vim.keymap.set("n", "gn", "", { desc = "Go Next", noremap = true })
+vim.keymap.set("n", "gnd", diagnostic_goto(true), { desc = "Next Diagnostic" })
+vim.keymap.set("n", "gne", diagnostic_goto(true, "ERROR"), { desc = "Next Error" })
+vim.keymap.set("n", "gnw", diagnostic_goto(true, "WARN"), { desc = "Next Warning" })
+vim.keymap.set("n", "gnq", vim.cmd.cnext, { desc = "Next quickfix" })
+
+-- Go to prev
+vim.keymap.set("n", "gpd", diagnostic_goto(false), { desc = "Prev Diagnostic" })
+vim.keymap.set("n", "gpe", diagnostic_goto(false, "ERROR"), { desc = "Prev Error" })
+vim.keymap.set("n", "gpw", diagnostic_goto(false, "WARN"), { desc = "Prev Warning" })
+vim.keymap.set("n", "gpq", vim.cmd.cprev, { desc = "Previous quickfix" })

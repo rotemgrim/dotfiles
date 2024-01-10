@@ -87,7 +87,7 @@ ins_left({
 })
 ins_left({
     function()
-        return ""
+        return ""
     end,
     color = function()
         -- auto change color according to neovims mode

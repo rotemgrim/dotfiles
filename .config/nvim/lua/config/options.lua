@@ -20,3 +20,5 @@ opt.tabstop = indent
 -- g.minimap_git_colors = 1
 -- g.minimap_width = 4
 -- g.minimap_auto_start = 1
+
+g.htl_css_templates = true
