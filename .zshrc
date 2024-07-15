@@ -51,6 +51,7 @@ antigen apply
 
 [ -f /home/linuxbrew/.linuxbrew/etc/profile.d/autojump.sh ] && . /home/linuxbrew/.linuxbrew/etc/profile.d/autojump.sh
 
+. "$HOME/.atuin/bin/env"
 eval "$(atuin init zsh --disable-up-arrow)" # --disable-ctrl-r
 eval "$(starship init zsh)"
 
@@ -69,3 +70,4 @@ export PATH="$HOME/.cargo/bin:$PATH"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 cat ~/motd | lolcat
+

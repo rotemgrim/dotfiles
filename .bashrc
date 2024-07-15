@@ -28,3 +28,8 @@ unset rc
 alias config='/usr/bin/git --git-dir=/home/rotem/.cfg/ --work-tree=/home/rotem'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+. "$HOME/.atuin/bin/env"
+
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+eval "$(atuin init bash)"
